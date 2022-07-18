@@ -96,10 +96,6 @@ flatpak install flathub net.rpcs3.RPCS3
 
 flatpak install flathub net.pcsx2.PCSX2
 
-flatpak install flathub net.davidotek.pupgui2
-
 flatpak install flathub com.usebottles.bottles
-
-flatpak install flathub net.veloren.airshipper
 
 flatpak install flathub com.bitwarden.desktop

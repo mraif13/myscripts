@@ -3,7 +3,7 @@ echo "Hi, Raif.. setting up development folder..."
 
 echo "Checking if git is installed.."
 
-sudo dnf install git
+sudo dnf -S git
 
 echo "Git is/was installed."
 
