@@ -45,11 +45,4 @@ mkdir temp
 
 cd temp
 
-echo "Downloading teamviewer from fedora using wget"
-
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-
-
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-echo "Please reboot and run apps.sh to install required apps.."

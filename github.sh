@@ -54,8 +54,8 @@ vagrant plugins install vagrant-vbguest vagrant-share
 
 echo "Downloading and making use vagrant uses libvirtd instead of vmware.."
 
-vagrant plugin install vagrant-libvirt
+#vagrant plugin install vagrant-libvirt
 
-vagrant up --provider=libvirt
+#vagrant up --provider=libvirt
 
 

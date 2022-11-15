@@ -2,52 +2,47 @@ echo "Hello Fedora! (Applications)"
 
 echo "Installing code.."
 
-sudo dnf install code
+sudo dnf install code  -y
 
 echo "Installing chromium"
 
-sudo dnf install chromium
+sudo dnf install chromium  -y
 
 echo "Installing gaming stuff..."
 
-sudo dnf install steam
+sudo dnf install steam  -y
 
-echo "Enabling fucking gloriouseggroll fedora copr and installing stuff.."
+#echo "Enabling fucking gloriouseggroll fedora copr and installing stuff.."
 
-sudo dnf copr enable gloriouseggroll/game-utils
+#sudo dnf copr enable gloriouseggroll/game-utils
 
-sudo dnf install goverlay
+#sudo dnf install goverlay  -y
 
-sudo dnf install mangohud
+#sudo dnf install mangohud  -y
 
-sudo dnf install lutris
+sudo dnf install lutris  -y
 
-echo "Setting up johncena141 stuff.."
+#echo "Setting up johncena141 stuff.."
 
-sudo dnf zpaq
-
-sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo && sudo dnf install curl dosbox jq mono-core opencl-utils winehq-staging jq libxcrypt
+#sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo && sudo dnf install curl dosbox jq mono-core opencl-utils winehq-mono jq libxcrypt
 
 echo "Installing other apps"
 
-sudo dnf install youtube-dl
-sudo dnf install htop
-sudo dnf install wget
-sudo dnf install neofetch
-sudo dnf install winetricks
-sudo dnf install openssl
-sudo dnf install qbittorrent
-sudo dnf install okular
+sudo dnf install youtube-dl  -y
+sudo dnf install htop  -y
+sudo dnf install wget  -y
+sudo dnf install neofetch  -y
+sudo dnf install winetricks  -y
+sudo dnf install openssl  -y
+sudo dnf install qbittorrent  -y
 
 echo "vulkan vulkan-loader:: search if opengl alternatives are avaiable.."
 
-sudo dnf install alsa-lib alsa-plugins fluidsynth pulseaudio openal
+sudo dnf install alsa-lib alsa-plugins fluidsynth pulseaudio openal -y 
 
-echo "Enabling and installing OBS studio-fedora (fork by gloriouseggroll)"
+sudo dnf install dosbox -y 
 
-sudo dnf copr enable gloriouseggroll/obs-studio-gamecapture
-
-sudo dnf install obs-studio-gamecapture.x86_64 obs-studio-gamecapture.i686 --refresh
+sudo dnf install jq libxcrypt zlib -y 
 
 echo "Installing ani-cli.."
 
@@ -62,40 +57,32 @@ wget https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip
 
 cd ..
 
-echo "Installing fedy.."
-sudo dnf copr enable kwizart/fedy
-sudo dnf install fedy -y
-
 echo "Downloading mpv player.."
 
-sudo dnf install mpv
+sudo dnf install mpv  -y
 
-echo "Setting up dropbox.."
+#echo "Setting up dropbox.."
 
-sudo dnf install dropbox nautilus-dropbox
+#sudo dnf install nautilus-python
+
+#sudo dnf install dropbox nautilus-dropbox  -y
 
 echo "Installing flatpaks.."
 
-flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord -y
 
-flatpak install flathub com.microsoft.Teams
+flatpak install flathub org.onlyoffice.desktopeditors -y
 
-flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub com.heroicgameslauncher.hgl -y
 
-flatpak install flathub io.github.mimbrero.WhatsAppDesktop
+flatpak install flathub net.ankiweb.Anki -y
 
-flatpak install flathub com.heroicgameslauncher.hgl
+flatpak install flathub org.flameshot.Flameshot -y
 
-flatpak install flathub net.ankiweb.Anki
+flatpak install flathub net.pcsx2.PCSX2 -y
 
-flatpak install flathub org.flameshot.Flameshot
+flatpak install flathub com.usebottles.bottles -y
 
-flatpak install flathub io.github.hakuneko.HakuNeko
+flatpak install flathub com.bitwarden.desktop -y
 
-flatpak install flathub net.rpcs3.RPCS3
-
-flatpak install flathub net.pcsx2.PCSX2
-
-flatpak install flathub com.usebottles.bottles
-
-flatpak install flathub com.bitwarden.desktop
+flatpak install easyeffects  -y
